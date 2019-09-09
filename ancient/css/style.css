@@ -1,0 +1,80 @@
+
+a:link,
+a:visited {
+    color:#333;
+    text-decoration:none;
+    border-bottom:3px solid #fe00f6;
+}
+a:hover,
+a:active {
+    color:#333;
+    text-decoration:none;
+    border-bottom:3px dashed #fe00f6;
+}
+a:link, a:visited {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 3px solid #fe00f6;
+    border-bottom-width: 3px;
+}
+
+#dokuwiki__site {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0;
+}
+
+#dokuwiki__header {
+    margin: 0;
+}
+
+#dokuwiki__header .headings {
+    padding-left: 2em;
+    margin-top: 1em;
+    float: left;
+}
+
+#dokuwiki__header .tools {
+    margin-bottom: 2.1em;
+    float: right;
+    text-align: right;
+    padding-right: 2em;
+}
+
+#dokuwiki__usertools {
+    position: relative;
+    border-bottom: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+#dokuwiki__sitetools {
+    font-size: 1em;
+}
+
+#dokuwiki__header div.breadcrumbs {
+    margin-bottom: .3em;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 0.5em 2em;
+}
+
+#dokuwiki__site .wrapper {
+    position: relative;
+    padding: 1em 2em;
+}
+
+#dokuwiki__footer {
+    margin-bottom: 1em;
+    padding: 1em 2em;
+}
+#dokuwiki__footer .doc {
+    margin-bottom: 1em;
+    float: right;
+}
+#dokuwiki__footer .license {
+    text-align: center;
+    padding-top: 1em;
+    border-top: 1px solid #ccc;
+    clear: both;
+}

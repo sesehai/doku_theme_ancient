@@ -1,0 +1,7 @@
+base     ancient
+author   sesehai
+email    sesehai@qq.com
+date     2019-09-06
+name     ancient Template
+desc     The template that gets you started
+url      https://www.dokuwiki.org/template:ancient
