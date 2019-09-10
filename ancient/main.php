@@ -48,7 +48,7 @@ $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
                         upload your logo into the data/media folder (root of the media manager) and replace 'logo.png' accordingly:
                         tpl_link(wl(),'<img src="'.ml('logo.png').'" alt="'.$conf['title'].'" />','id="dokuwiki__top" accesskey="h" title="[H]"') */ ?>
                 <?php if ($conf['tagline']): ?>
-<!--                    <p class="claim">--><?php //echo $conf['tagline'] ?><!--</p>-->
+                    <p class="claim"><?php echo $conf['tagline'] ?></p>
                 <?php endif ?>
 
 <!--                <ul class="a11y skip">-->
@@ -158,8 +158,11 @@ $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
         <!-- ********** FOOTER ********** -->
         <div id="dokuwiki__footer"><div class="pad">
 <!--            <div class="doc">--><?php //tpl_pageinfo() /* 'Last modified' etc */ ?><!--</div>-->
-            <?php tpl_license('button') /* content license, parameters: img=*badge|button|0, imgonly=*0|1, return=*0|1 */ ?>
+<!--            --><?php //tpl_license('button') /* content license, parameters: img=*badge|button|0, imgonly=*0|1, return=*0|1 */ ?>
 
+                <div class="license">
+                    © 2019 紫郢青索
+                </div>
         </div></div><!-- /footer -->
 
         <?php tpl_includeFile('footer.html') ?>
