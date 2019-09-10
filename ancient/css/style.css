@@ -1,21 +1,22 @@
 
-a:link,
-a:visited {
-    color:#333;
-    text-decoration:none;
-    border-bottom:3px solid #fe00f6;
-}
+/*
 a:hover,
 a:active {
     color:#333;
     text-decoration:none;
-    border-bottom:3px dashed #fe00f6;
+    border-bottom:1px dashed #fe00f6;
 }
 a:link, a:visited {
     color: #333;
     text-decoration: none;
-    border-bottom: 3px solid #fe00f6;
-    border-bottom-width: 3px;
+    border-bottom: 1px solid #fe00f6;
+}
+*/
+
+#dokuwiki__header h1 a {
+    text-decoration: none;
+    color: #000;
+    background-color: inherit;
 }
 
 #dokuwiki__site {
@@ -35,7 +36,7 @@ a:link, a:visited {
 }
 
 #dokuwiki__header .tools {
-    margin-bottom: 2.1em;
+    margin-bottom: 1.5em;
     float: right;
     text-align: right;
     padding-right: 2em;
@@ -44,7 +45,7 @@ a:link, a:visited {
 #dokuwiki__usertools {
     position: relative;
     border-bottom: 0;
-    background-color: #fff;
+    background-color: #F9F7ED;
     width: 100%;
 }
 
@@ -61,12 +62,12 @@ a:link, a:visited {
 
 #dokuwiki__site .wrapper {
     position: relative;
-    padding: 1em 2em;
+    padding: 1em 4em;
 }
 
 #dokuwiki__footer {
     margin-bottom: 1em;
-    padding: 1em 2em;
+    padding: 1em 0em;
 }
 #dokuwiki__footer .doc {
     margin-bottom: 1em;

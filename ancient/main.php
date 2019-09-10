@@ -48,12 +48,12 @@ $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
                         upload your logo into the data/media folder (root of the media manager) and replace 'logo.png' accordingly:
                         tpl_link(wl(),'<img src="'.ml('logo.png').'" alt="'.$conf['title'].'" />','id="dokuwiki__top" accesskey="h" title="[H]"') */ ?>
                 <?php if ($conf['tagline']): ?>
-                    <p class="claim"><?php echo $conf['tagline'] ?></p>
+<!--                    <p class="claim">--><?php //echo $conf['tagline'] ?><!--</p>-->
                 <?php endif ?>
 
-                <ul class="a11y skip">
-                    <li><a href="#dokuwiki__content"><?php echo $lang['skip_to_content'] ?></a></li>
-                </ul>
+<!--                <ul class="a11y skip">-->
+<!--                    <li><a href="#dokuwiki__content">--><?php //echo $lang['skip_to_content'] ?><!--</a></li>-->
+<!--                </ul>-->
                 <div class="clearer"></div>
             </div>
 
@@ -145,28 +145,21 @@ $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
             <hr class="a11y" />
 
             <!-- PAGE ACTIONS -->
-            <?php if ($showTools): ?>
-                <div id="dokuwiki__pagetools">
-                    <h3 class="a11y"><?php echo $lang['page_tools'] ?></h3>
+            <div id="dokuwiki__pagetools">
+                <h3 class="a11y"><?php echo $lang['page_tools']; ?></h3>
+                <div class="tools">
                     <ul>
-                        <?php tpl_toolsevent('pagetools', array(
-                            'edit'      => tpl_action('edit', 1, 'li', 1),
-                            'discussion'=> _tpl_action('discussion', 1, 'li', 1),
-                            'revisions' => tpl_action('revisions', 1, 'li', 1),
-                            'backlink'  => tpl_action('backlink', 1, 'li', 1),
-                            'subscribe' => tpl_action('subscribe', 1, 'li', 1),
-                            'revert'    => tpl_action('revert', 1, 'li', 1),
-                            'top'       => tpl_action('top', 1, 'li', 1),
-                        )); ?>
+                        <?php echo (new \dokuwiki\Menu\PageMenu())->getListItems(); ?>
                     </ul>
                 </div>
-            <?php endif; ?>
+            </div>
         </div><!-- /wrapper -->
 
         <!-- ********** FOOTER ********** -->
         <div id="dokuwiki__footer"><div class="pad">
-            <div class="doc"><?php tpl_pageinfo() /* 'Last modified' etc */ ?></div>
+<!--            <div class="doc">--><?php //tpl_pageinfo() /* 'Last modified' etc */ ?><!--</div>-->
             <?php tpl_license('button') /* content license, parameters: img=*badge|button|0, imgonly=*0|1, return=*0|1 */ ?>
+
         </div></div><!-- /footer -->
 
         <?php tpl_includeFile('footer.html') ?>
