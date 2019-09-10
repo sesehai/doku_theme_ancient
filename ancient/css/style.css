@@ -13,14 +13,15 @@ a:link, a:visited {
 }
 */
 #dokuwiki__header p.claim {
-    margin-top: 5px;
-    font-size: 12px;
+    margin-top: .5em;
+    font-size: .8em;
 }
 
 #dokuwiki__header h1 a {
     text-decoration: none;
     color: #000;
     background-color: inherit;
+    font-size: 1.5em;
 }
 
 #dokuwiki__site {
@@ -67,6 +68,15 @@ a:link, a:visited {
 #dokuwiki__site .wrapper {
     position: relative;
     padding: 1em 4em;
+}
+
+#dw__toc {
+    width: 20em;
+    padding-bottom: 1em;
+}
+
+#dokuwiki__content {
+    line-height: 1.8em;
 }
 
 #dokuwiki__footer {
