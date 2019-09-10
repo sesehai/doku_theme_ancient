@@ -12,6 +12,10 @@ a:link, a:visited {
     border-bottom: 1px solid #fe00f6;
 }
 */
+#dokuwiki__header p.claim {
+    margin-top: 5px;
+    font-size: 12px;
+}
 
 #dokuwiki__header h1 a {
     text-decoration: none;
