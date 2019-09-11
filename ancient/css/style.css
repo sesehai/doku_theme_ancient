@@ -12,6 +12,30 @@ a:link, a:visited {
     border-bottom: 1px solid #fe00f6;
 }
 */
+h1 {
+    font-size:2em;
+    margin:0 0 .444em;
+}
+h2 {
+    font-size:1.5em;
+    margin:0 0 .666em;
+}
+h3 {
+    font-size:1.125em;
+    margin:0 0 .888em;
+}
+h4 {
+    font-size:1em;
+    margin:0 0 1em;
+}
+h5 {
+    font-size:.875em;
+    margin:0 0 1.1428em;
+}
+h6 {
+    font-size:.75em;
+    margin:0 0 1.333em;
+}
 #dokuwiki__header p.claim {
     margin-top: .5em;
     font-size: .8em;
@@ -54,25 +78,61 @@ a:link, a:visited {
     width: 100%;
 }
 
-#dokuwiki__sitetools {
-    font-size: 1em;
+@media screen and (min-width: 800px) {
+    #dokuwiki__sitetools {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 800px) {
+    #dokuwiki__sitetools {
+        font-size: 1em;
+        width: 100%;
+        text-align: justify;
+    }
 }
 
-#dokuwiki__header div.breadcrumbs {
-    margin-bottom: .3em;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    padding: 0.5em 2em;
+@media screen and (min-width: 800px) {
+    #dokuwiki__header div.breadcrumbs {
+        margin-bottom: .3em;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        padding: 0.5em 2em;
+    }
 }
 
-#dokuwiki__site .wrapper {
-    position: relative;
-    padding: 1em 4em;
+@media screen and (max-width: 800px) {
+    #dokuwiki__header div.breadcrumbs {
+        margin-bottom: .3em;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        padding: 0.5em 1em;
+    }
 }
 
-#dw__toc {
-    width: 20em;
-    padding-bottom: 1em;
+@media screen and (max-width: 800px) {
+    #dokuwiki__site .wrapper {
+        position: relative;
+        padding: 1em 1em;
+    }
+}
+@media screen and (min-width: 800px) {
+    #dokuwiki__site .wrapper {
+        position: relative;
+        padding: 1em 4em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #dw__toc {
+        width: 100%;
+        padding-bottom: 1em;
+    }
+}
+@media screen and (min-width: 800px) {
+    #dw__toc {
+        width: auto;
+        padding-bottom: 1em;
+    }
 }
 
 #dokuwiki__content {
