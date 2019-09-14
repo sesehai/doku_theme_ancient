@@ -41,7 +41,6 @@ hr {
     clear: both;
 }
 pre{
-    margin: 0.5em 0;
     padding: 0.5em 1em;
     border-radius: 0.5em;
     overflow-x: auto;
@@ -49,6 +48,15 @@ pre{
     background-color: #f0f2f5;
     border: 0.1em #666666;
     border-style:dashed;
+}
+.dokuwiki dl.code dt, .dokuwiki dl.file dt {
+    background-color: #eee;
+    border: dashed #ccc;
+    border-width: 0.1em 0.1em 0;
+    color: inherit;
+    display: inline;
+    padding: .5em .5em .5em;
+    margin-left: 1em;
 }
 p{
     text-indent: 2em;
