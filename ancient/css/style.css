@@ -51,7 +51,7 @@ pre{
 }
 .dokuwiki dl.code dt, .dokuwiki dl.file dt {
     background-color: #eee;
-    border: dashed #ccc;
+    border: dashed #666;
     border-width: 0.1em 0.1em 0;
     color: inherit;
     display: inline;
