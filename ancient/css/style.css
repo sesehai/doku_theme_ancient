@@ -49,6 +49,33 @@ pre{
     border: 0.1em #666666;
     border-style:dashed;
 }
+blockquote {
+    padding: 0 .5em;
+    border: solid #090;
+    border-width: 0 0 0 .25em;
+}
+.dokuwiki button {
+    vertical-align: middle;
+    height: 1.8em;
+    line-height: 1.9em;
+    border: dashed 0.12em #ccc;
+    border-radius: 0.5em;
+    margin: 0.1em;
+    padding: 0 0.4em;
+}
+.dokuwiki textarea.edit {
+    width: 100%;
+    margin-bottom: .5em;
+    border: dashed 0.12em #ccc;
+    border-radius: 0.5em;
+}
+input select button textarea{
+    border: .1em dashed #ccc;
+    border-radius: .4em;
+    height: 1.8em;
+    line-height: 1.8em;
+    padding-left: .5em;
+}
 .dokuwiki dl.code dt, .dokuwiki dl.file dt {
     background-color: #eee;
     border: dashed #666;
@@ -71,6 +98,10 @@ p{
     color: #000;
     background-color: inherit;
     font-size: 1.5em;
+}
+.dokuwiki fieldset{
+    border: 0.12em dashed #ccc;
+    border-radius: 0.5em;
 }
 
 @media screen and (max-width: 800px) {
@@ -181,6 +212,14 @@ p{
         position: relative;
         padding: 1em 6em;
     }
+}
+
+#dokuwiki__header form.search #qsearch__in {
+    border: 0.1em dashed #ccc;
+    border-radius: 0.4em;
+    height: 1.8em;
+    line-height: 1.8em;
+    padding-left: 0.5em;
 }
 
 #dokuwiki__header .pad {
