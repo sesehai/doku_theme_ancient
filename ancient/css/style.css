@@ -34,7 +34,8 @@ h6 {
 }
 hr {
     border-style: dashed;
-    border-width: 0.13em 0 0;
+    border-color: #ccc;
+    border-width: 1px 0 0;
     text-align: center;
     height: 0;
     width: 100%;
@@ -121,6 +122,9 @@ form.search button {
 }
 
 @media screen and (max-width: 800px) {
+    #dokuwiki__header ul.a11y.skip {
+        display: none;
+    }
     #dokuwiki__header .pad {
         opacity: 1;
         box-shadow: rgba(0,0,0,0.125) 0 0 20px;
