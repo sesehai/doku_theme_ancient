@@ -85,7 +85,7 @@ $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
                         <?php echo (new \dokuwiki\Menu\MobileMenu())->getDropdown($lang['tools']); ?>
                     </div>
                     <ul>
-                        <?php echo (new \dokuwiki\Menu\SiteMenu())->getListItems('action ', false); ?>
+                        <?php //echo (new \dokuwiki\Menu\SiteMenu())->getListItems('action ', false); ?>
                     </ul>
                 </div>
 
