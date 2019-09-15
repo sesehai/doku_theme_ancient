@@ -51,9 +51,9 @@ $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
                     <p class="claim"><?php echo $conf['tagline'] ?></p>
                 <?php endif ?>
 
-<!--                <ul class="a11y skip">-->
-<!--                    <li><a href="#dokuwiki__content">--><?php //echo $lang['skip_to_content'] ?><!--</a></li>-->
-<!--                </ul>-->
+                <ul class="a11y skip">
+                    <li><a href="#dokuwiki__content"><?php echo $lang['skip_to_content'] ?></a></li>
+                </ul>
                 <div class="clearer"></div>
             </div>
 
@@ -70,16 +70,9 @@ $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
                                     echo '</li>';
                                 }
                             ?>
-                            <?php /* the optional second parameter of tpl_action() switches between a link and a button,
-                                     e.g. a button inside a <li> would be: tpl_action('edit', 0, 'li') */
+                            <?php
+                            echo (new \dokuwiki\Menu\UserMenu())->getListItems('action ', false);
                             ?>
-                            <?php tpl_toolsevent('usertools', array(
-                                'admin'     => tpl_action('admin', 1, 'li', 1),
-                                'userpage'  => _tpl_action('userpage', 1, 'li', 1),
-                                'profile'   => tpl_action('profile', 1, 'li', 1),
-                                'register'  => tpl_action('register', 1, 'li', 1),
-                                'login'     => tpl_action('login', 1, 'li', 1),
-                            )); ?>
                         </ul>
                     </div>
                 <?php endif ?>
@@ -88,13 +81,12 @@ $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
                 <div id="dokuwiki__sitetools">
                     <h3 class="a11y"><?php echo $lang['site_tools'] ?></h3>
                     <?php tpl_searchform() ?>
-<!--                    <ul>-->
-<!--                        --><?php //tpl_toolsevent('sitetools', array(
-//                            'recent'    => tpl_action('recent', 1, 'li', 1),
-//                            'media'     => tpl_action('media', 1, 'li', 1),
-//                            'index'     => tpl_action('index', 1, 'li', 1),
-//                        )); ?>
-<!--                    </ul>-->
+                    <div class="mobileTools">
+                        <?php echo (new \dokuwiki\Menu\MobileMenu())->getDropdown($lang['tools']); ?>
+                    </div>
+                    <ul>
+                        <?php echo (new \dokuwiki\Menu\SiteMenu())->getListItems('action ', false); ?>
+                    </ul>
                 </div>
 
             </div>

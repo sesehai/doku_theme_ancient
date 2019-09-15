@@ -103,6 +103,22 @@ p{
     border: 0.12em dashed #ccc;
     border-radius: 0.5em;
 }
+form.search button {
+    background: #fbfaf9 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAAY1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmaHTeAAAAIXRSTlMHNEEkTD4WPVEtKzcMQ1NATkc4VFJGHDEhJ0Q6RS8uVQBDAjEGAAAAXklEQVR4AS3HVQ4CUQDF0MHdGZfe/a+SNLz+NKeKNSnJCTj2Sn55rl9w+XNiTNLfaWRFHZsZ5cYZtew4xK7cZD7EBmaZFdtz9gO0MtlRWmTSvafH3GpZOulCWwBpxT/nGxX5oR8AJgAAAABJRU5ErkJggg==) top left repeat-x;
+    border-width: 0;
+    width: 13px;
+    height: 14px;
+    text-indent: -99999px;
+    margin-left: -27px;
+    box-shadow: none;
+    padding: 0;
+}
+#dokuwiki__pagetools{
+    background: none;
+}
+#dokuwiki__usertools{
+    background: none;
+}
 
 @media screen and (max-width: 800px) {
     #dokuwiki__header .pad {
@@ -121,6 +137,20 @@ p{
         float: none;
         text-align: center;
     }
+    #dokuwiki__header form.search{
+        float: left;
+        margin: 0 .2em .2em 0;
+        width: 49%;
+    }
+    #dokuwiki__header .mobileTools select {
+        overflow: visible;
+        width: 45% !important;
+        border: .1em dashed #ccc;
+        border-radius: .4em;
+        height: 1.8em;
+        line-height: 1.8em;
+        background-color: #fff;
+    }
     #dokuwiki__header .tools {
         margin-top: 0.5em;
         margin-bottom: 1.5em;
@@ -131,7 +161,6 @@ p{
     #dokuwiki__usertools {
         position: relative;
         border-bottom: 0;
-        background-color: #F9F7ED;
         width: 100%;
     }
     #dokuwiki__sitetools {
@@ -144,7 +173,6 @@ p{
         margin-right: 0;
     }
     .dokuwiki button {
-        width: 10%;
         vertical-align: middle;
     }
 
@@ -177,6 +205,10 @@ p{
     .dokuwiki fieldset {
         width: auto;
     }
+
+    #dokuwiki__usertools, #dokuwiki__sitetools ul, #dokuwiki__sitetools h3, #dokuwiki__pagetools, .dokuwiki div.breadcrumbs, .dokuwiki .pageId {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -191,21 +223,28 @@ p{
     }
 
     #dokuwiki__header .tools {
-        margin-top: 0.5em;
-        margin-bottom: 1.5em;
+        margin-bottom: 0.5em;
         float: right;
         text-align: right;
         padding-right: 2em;
     }
+    #dokuwiki__header .tools ul {
+        margin-bottom: 0;
+        margin-top: 0.5em;
+    }
+
     #dokuwiki__usertools {
         position: relative;
         border-bottom: 0;
-        background-color: #F9F7ED;
         width: 100%;
     }
 
     #dokuwiki__sitetools {
         font-size: 1em;
+    }
+
+    #dokuwiki__sitetools .mobileTools{
+        display: none;
     }
 
     #dokuwiki__site .wrapper {
