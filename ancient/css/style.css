@@ -92,6 +92,7 @@ p{
 #dokuwiki__header p.claim {
     margin-top: .5em;
     font-size: .8em;
+    text-indent: 0;
 }
 
 #dokuwiki__header h1 a {
