@@ -110,17 +110,24 @@ form.search button {
     width: 13px;
     height: 14px;
     text-indent: -99999px;
-    margin-left: -27px;
+    margin-left: 4px;
     box-shadow: none;
     padding: 0;
-}
-#dokuwiki__pagetools{
-    background: none;
 }
 #dokuwiki__usertools{
     background: none;
 }
-
+#dokuwiki__pagetools {
+    position: absolute;
+    right: -44px;
+    top: 1em;
+    width: 44px;
+    background: none;
+    border-right: 0.13em dashed #ccc;
+    border-top: 0.13em dashed #ccc;
+    border-bottom: 0.13em dashed #ccc;
+    border-radius: 0.6em;
+}
 @media screen and (max-width: 800px) {
     #dokuwiki__header ul.a11y.skip {
         display: none;
@@ -137,9 +144,10 @@ form.search button {
     }
     #dokuwiki__header .headings {
         padding-left: 0;
-        margin-top: 1.5em;
+        margin-top: 1em;
         float: none;
         text-align: center;
+        margin-bottom: 0.2em;
     }
     #dokuwiki__header form.search{
         float: left;
@@ -222,8 +230,9 @@ form.search button {
 
     #dokuwiki__header .headings {
         padding-left: 2em;
-        margin-top: 1.5em;
+        margin-top: 1em;
         float: left;
+        margin-bottom: 0.2em;
     }
 
     #dokuwiki__header .tools {
